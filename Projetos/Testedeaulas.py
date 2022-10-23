@@ -186,13 +186,70 @@ print('Até que seu carro está novo...'if tempo <= 5 else print('Essa caranga j
 
 #Aula 11 - Cores no Terminal
 
-ANSI - Escape Sequence (American National Standards Institute )
+#ANSI - Escape Sequence (American National Standards Institute )
 
-\033[style;text;background;m #Esse é o padrão para criação de cores
+#\033[style;text;background;m #Esse é o padrão para criação de cores
 # Um exemplo real de teste seria: print ('\033[1;37mOla Mundo!\033[1;37m') 
 #a repetição dentro do print no final da frase é para não fazer com que a linha saia pintada até o final da tela.
 
 #dentro do padrão style, alguns são: 0=Sem estilo; 1=Negrito; 4=Sobrelinhado;7=Negativo
 #dentro do padrão texto, alguns são: 30=Branco 31=Vermelho 32=Verde 33=Amarelo 34=Azul claro 35=Rosa 36=Ciano 37=Cinza
 #dentro do padrão background, alguns são: 40=Branco 41=Vermelho 42=Verde 43=Amarelo 44=Azul claro 45=Rosa 46=Ciano 47=Cinza
-\033[0;30;41m
+#\033[0;30;41m
+
+from re import A
+
+
+Aula 12 - Condições Aninhadas
+
+#If e Else são condições para situações com 2 op´ções, para utilizar mais condições, somente empregar o elif.and
+#if:
+#    situacao A
+#elif situação C:
+#else:
+#    situação b
+
+#n = input('Qual o seu nome??')
+#nome = n.lower()
+#if nome == 'gabriel':
+#    print ('Parece que temos o mesmo nome!Que maneiro!')
+##elif nome == 'andre' or nome == 'thiago' or nome == 'sonia' or nome == 'adailton':
+#elif nome in 'andre thiago sonia adailton':
+#        print('Caramba, tenho um parente que se chama assim!')
+#elif nome == 'rogério':
+#    print ('Meu primo se chama assim tambem!')
+#else:
+#    print ('Um nome qualquer...')
+
+Aula 13 - Estrutura da repetição for
+
+#para utilizar loops em python, existe a função chamada Loop. Ela faz uma estrutura de condição em que é possivel fazer repetiçoes e condições.
+
+i = int(input("Inicio: "))
+f = int(input("Fim: "))
+p = int(input("Passo: "))
+for c in range(i, f+1, p):
+    print (c)
+print ('Fim')
+
+#Nessa estrutura por exemplo, eu criei uma variavel para declarar o inicio, uma para o fim e uma para o numero de passos ou de pulos que essa sequencia fará.
+#Nela caso eu coloque i=0, f=10, p=1, ela contara do 1 ao 10, de 1 em 1. (1,2,3,4,5,6,7,8,9,10)
+#Se eu colocasse i=2, f=10, p=2, ela contaria do 2 ao 10, de 2 em 2 (2,4,6,8,10)
+
+#Agora caso eu fizesse o Loop da seguinte forma:
+
+for c in range(0,5):
+    int(input('Digite um valor: '))
+print('fim')
+
+#Nesse caso, ele faria colocarmos o valor o numero de vezes dentro do range, ficariam 5 "Digite um valor"
+#E dentro da seguinte forma, seria diferente novamente:
+
+s = 0
+for c in range(0,5):
+    n = int(input('Digite um valor: '))
+    s += n
+print (f'A soma dos valores é igual a {s}')
+
+#Aqui ele faria pegar os valores inseridos no numero de repetições do loop e faria uma soma dos valores totais no final.
+

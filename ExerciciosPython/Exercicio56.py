@@ -1,0 +1,1 @@
+#Desenvolva um programa que leia nome, idade e sexo de 4 pessoas. No final o programa deve mostrar a media de idade, qual o nome do homem mais velho e quantas mulheres tem menos de 21 anos.
