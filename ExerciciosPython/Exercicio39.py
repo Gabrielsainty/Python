@@ -1,17 +1,23 @@
 #Faça um programa que leia o ano de nascimento de um jovem e informe de acordo com a sua nasc: 
-#Se ele ainda ira se nascar no Serviço Militar obrigatorio
-#Se é a hora de se nascar
-#Se já passou do tempo do seu alistament
 #Seu programa também deverá mostrar o tempo que passou do prazo.
+from datetime import date
 
-ano = int(2022)
-nasc = int(input('Fale qual o ano de nascimento: '))
+atual = date.today().year
 
-if nasc == 18:
-    print ('Você devera comparecer ao alistamento ainda esse ano.')
-elif nasc > 18:
-    print (f'Você já compareceu ao alistamento obrigatório à {abs(ano-nasc)} anos.')
+sexo = input('Me diga qual seu sexo: ')
+if sexo == 'mulher' and 'Mulher' and 'MULHER':
+    print ('Mulheres não possuem obrigatoriedade de alistamento.')
+    quit
 else:
-    print('Voce ainda deve comparecer ao alistamento Obrigatorio.')
-
-    abs()
+    print('Homens necessitam se alistar quando fizerem 18 anos.')
+nasc = int(input('Me diga qual o ano de seu nascimento: '))
+idade = atual - nasc
+maior = idade - 18
+menor = 18 - idade
+print (f'Quem nasceu em {nasc} tem {idade} anos em {atual}.')
+if idade == 18:
+    print ('Você devera comparecer ao alistamento ainda esse ano.')
+elif idade > 18:
+    print (f'Você já compareceu ao alistamento obrigatório à {maior} anos.')
+elif idade < 18:
+    print(f'Ainda faltam {menor} anos para o alistamento obrigatorio.')
