@@ -1,13 +1,11 @@
 #Faça um programa que leia o ano de nascimento de um jovem e informe de acordo com a sua nasc: 
 #Seu programa também deverá mostrar o tempo que passou do prazo.
 from datetime import date
-
 atual = date.today().year
-
 sexo = input('Me diga qual seu sexo: ')
-if sexo == 'mulher' and 'Mulher' and 'MULHER':
+if sexo.lower == 'mulher':
     print ('Mulheres não possuem obrigatoriedade de alistamento.')
-    quit
+    quit()
 else:
     print('Homens necessitam se alistar quando fizerem 18 anos.')
 nasc = int(input('Me diga qual o ano de seu nascimento: '))
