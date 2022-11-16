@@ -9,8 +9,8 @@
 
 #Exercicio 49:
 
-i= int(input("Digite um número: "))
-c= int(input("Digite até qual numero da tabuada: "))
-print (f'A tabuada do {i} é:')
-for c in range(1,c+1):
-    print (f'{i}x{c}={i*c}.')
+num= int(input("Digite um número: "))
+cont= int(input("Digite até qual numero da tabuada: "))
+print (f'A tabuada do {num} é:')
+for cont in range(1,cont+1):
+    print (f'{num}x{cont}={num*cont}.')

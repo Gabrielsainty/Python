@@ -1,4 +1,5 @@
-ano = 20
-#nasc = int(input('Fale qual o ano de nascimento: '))
-nasc = 12
-print (abs(ano-nasc))
+#z = [x for x in range(0,10)]
+#print (z)
+
+for x in range (0,10):
+    print (x)

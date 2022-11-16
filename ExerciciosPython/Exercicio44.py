@@ -5,7 +5,7 @@
 #3x ou mais: 20% de juros
 
 pp = float(input('Digite o preço do produto que deseja comprar:'))
-opt = int(input('[ ] A Vista Dinheiro/Cheque \n[ ] A vista cartão \n[ ] 2x no cartão \n[ ] 3x ou mais no cartão \nQual metodo de pagamento irá utilizar: '))
+opt = int(input('[1] A Vista Dinheiro/Cheque \n[2] A vista cartão \n[3] 2x no cartão \n[4] 3x ou mais no cartão \nQual metodo de pagamento irá utilizar: '))
 
 if opt == 1:
     total = pp - (pp * 10 / 100)

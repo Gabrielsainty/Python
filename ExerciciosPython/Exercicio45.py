@@ -1,12 +1,11 @@
 import random
 from time import sleep
 
-jogo = input('Deseja jogar Jokenpô comigo?? ')
+jogo = str(input('Deseja jogar Jokenpô comigo?? '))
 if jogo.lower == 'sim':
     print('Beleza, então vamos lá!')
 else:
-     quit
-
+     quit()
 escolhas = ['pedra','papel','tesoura']
 opt2 = random.randint(0,2)
 print (f'O computador escolheu {escolhas[opt2]}')
